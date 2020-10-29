@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<title>javascript intro</title>
+<script>
+ console.log("hello javascript")
+ document.write("hello to scripting language")
+
+ alert("introduction to javascript")
+
+//variable declaration
+
+ var a
+ console.log(10)
+
+ var a
+ console.log("hello")
+ console.log(typeof(a))
+//calling a function ,can be called where ever u want 
+ hello()
+
+ let b
+ console.log("hi")
+ console.log(typeof(b))
+
+ const c=10
+ console.log(c)
+//funtion delaration
+
+ function hello(){
+     console.log("executing a function")
+ }
+//function with parameters
+ function hi(a)
+ {
+     console.log("hello everyone "+a)
+ }
+
+ hi("this is javascript")
+
+function add(a,b){
+    console.log(a+b)
+}
+
+add(10,40)
+
+//function with return statement
+function sub(a,b){
+    return(a-b)
+}
+//calling function with variable
+let res=sub(50,40)
+console.log(res)
+
+//calling directly
+console.log(sub(30,10))
+//assigning a function to varaible
+let pro=function mul(a,b){
+    console.log(a*b)
+  //return(a*b) doesn't work
+}
+
+pro(3,2)
+//ananymous function 
+let quo=function(a,b){
+    console.log(a/b)
+
+}
+
+quo(4,2)
+//called function in form
+function submitevent(){
+    console.log("submited")
+    console.log(document.getElementById("name"))
+    //printing a value like below and also by assigning to variable
+   console.log(document.getElementById("name").value )
+   let age=document.getElementById("age").value
+   console.log(age)
+}
+
+</script>
+</head>
+
+<body>
+<form>
+    <div>
+        <label> enter the name<input type="text" name="name" id="name"></label>
+     <br>
+        <label>enter the age<input type="number" name="age" id="age"></label> 
+       <br>
+        <button type="button"  onclick="submitevent()">submit</button>
+    </div>
+
+</form>
+</body>
+</html>
